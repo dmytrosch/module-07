@@ -171,21 +171,21 @@ form{
     font-size: 14px;
 }
 
-input{
+input, textarea{
     border: 1px solid #cccccc;
-    width: 457px;
-    height: 52px;
+    width: 456px;
     border-radius: 5px;
     padding-left: 20px;
-    /* padding-top: 17px; */
+    outline: none;
+    transition: border 0.5s ease-out;
+}
+
+input{
+    height: 52px;
 }
 
 textarea{
-    width: 456px;
     height: 213px;
-    resize: none;
-    border-radius: 5px;
-    padding-left: 20px;
     padding-top: 17px;
 }
 
@@ -237,11 +237,11 @@ input::placeholder, textarea::placeholder{
 }
 
 input:required:valid, textarea:valid{
-    border: 1px solid greenyellow;
+    border: 3px solid greenyellow;
 }
 
-input:required:invalid, textarea:invalid{
-    border: 1px solid red;
+input:required:focus:invalid, textarea:focus:invalid{
+    border: 3px solid red;
 }
 
 /* *************FONTS************** */
