@@ -248,7 +248,7 @@ input:required:invalid, textarea:invalid{
 
 @font-face{
     font-family: "Wisdom Script";
-    src: url("../fonts/Wisdom Script AJ.otf") format('otf');
+    src: url('../fonts/Wisdom-Script-AJ.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 }
