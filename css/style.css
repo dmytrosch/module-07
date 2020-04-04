@@ -34,7 +34,7 @@ nav{
 }
 
 .site-logo a{
-    font-family: "Wisdom Script";
+    font-family: "Wisdom Script", script;
     color: #fed136;
     font-size: 26px;
     letter-spacing: calc(50 * 26px / 1000);
