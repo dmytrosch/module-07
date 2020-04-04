@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="container">
         <header>
             <nav class="navigation-menu">
                 <h1 class="site-logo">
@@ -32,7 +32,7 @@
                 <p class="main-section-description">Proin iaculis purus consequat sem cure.</p>
                 <ul class="services-list">
                     <li class="service-item">
-                        <h3 class="service-title"></h3>
+                        <h3 class="service-title e-com-item">E-Commerce</h3>
                         <p class="service-info">
                             Proin iaculis purus consequat sem cure
                             digni ssim. Donec porttitora entum suscipit
@@ -40,7 +40,7 @@
                         </p>
                     </li>
                     <li class="service-item">
-                        <h3 class="service-title"></h3>
+                        <h3 class="service-title resp-web-item">Responsive Web</h3>
                         <p class="service-info">
                             Proin iaculis purus consequat sem cure
                             digni ssim. Donec porttitora entum suscipit
@@ -48,7 +48,7 @@
                         </p>
                     </li>
                     <li class="service-item">
-                        <h3 class="service-title"></h3>
+                        <h3 class="service-title web-security-item">Web Security</h3>
                         <p class="service-info">
                             Proin iaculis purus consequat sem cure
                             digni ssim. Donec porttitora entum suscipit
@@ -58,35 +58,37 @@
                 </ul>
             </section>
         </main>
-
-        <footer>
-            <section class="main-section">
-                <h2 class="main-section-title">Contact us</h2>
-                <p class="main-section-description">
-                    Proin iaculis purus consequat sem cure. 
-                </p>
-                <form action="#" method="get" class="contact-form">
-                    <ul class="contact-form-list">
-                        <li class="contact-form-item">
-                            <input type="text" name="visitor-name" placeholder="Your name *" id="" required>
-                        </li>
-                        <li class="contact-form-item">
-                            <input type="email" name="visitor-email" placeholder="Your email *" id="" required>
-                        </li>
-                        <li class="contact-form-item">
-                            <input type="text" name="form-subject" placeholder="Subject" id="">
-                        </li>
-                        <li class="contact-form-item">
-                            <textarea name="form-text" placeholder="Your message *" id="" cols="30" rows="10" required></textarea>
-                        </li>
-                        <li class="contact-form-item">
-                            <button type="submit">Send message</button>
-                        </li>
-                    </ul>
-                </form>
-            </section>
-        </footer>
     </div>
+    <footer>
+        <section class="main-section">
+            <h2 class="main-section-title">Contact us</h2>
+            <p class="main-section-description footer-description">
+                Proin iaculis purus consequat sem cure. 
+            </p>
+            <form action="#" method="get" class="contact-form">
+                <ul class="contact-form-list">
+                    <li class="contact-form-item">
+                        <ul class="contact-form-list-parted">
+                            <li>
+                                <input type="text" name="visitor-name" placeholder="Your name *" id="" required>
+                            </li>
+                            <li>
+                                <input type="email" name="visitor-email" placeholder="Your email *" id="" required>
+                            </li>
+                            <li>
+                                <input type="text" name="form-subject" placeholder="Subject" id="">
+                            </li>
+                        </ul>
+                    <li class="contact-form-item">
+                        <textarea name="form-text" placeholder="Your message *" id="" cols="30" rows="10" required wrap="soft" autocomplete="none"></textarea>
+                    </li>
+                    <li class="contact-form-item">
+                        <button type="submit" class="send-form-button">Send message</button>
+                    </li>
+                </ul>
+            </form>
+        </section>
+    </footer>
 </body>
 
 </html>
