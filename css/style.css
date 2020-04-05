@@ -208,10 +208,23 @@ input::placeholder, textarea::placeholder{
     font-weight: 700;
     width: 240px;
     height: 65px;
-    background-color: #fed136;
+    background-color: rgba(254, 209, 54, 1);
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.send-form-button:hover{
+    color: rgb(254, 209, 54);
+    background-color: transparent;
+    border: 3px solid rgb(254, 209, 54);
+}
+
+.send-form-button:active{
+    background-color: rgba(254, 209, 54, .5);
+    outline: none;
+    transform: translateY(2px);
 }
 
 .contact-form-list{
