@@ -24,8 +24,9 @@ menu, ul{
 nav{
     display: flex;
     justify-content: space-between;
-    height: 65px;
+    /* height: 65px; */
     align-items: flex-end;
+    padding-top: 40px;
 }
 
 .site-logo{
@@ -34,7 +35,7 @@ nav{
 }
 
 .site-logo a{
-    font-family: "Wisdom Script";
+    font-family: "WisdomScript";
     color: #fed136;
     font-size: 26px;
     letter-spacing: calc(50 * 26px / 1000);
@@ -43,11 +44,11 @@ nav{
 .menu-list{
     display: flex;
     justify-content: space-between;
-    width: 485px;
+    min-width: 485px;
     padding-left: 5px;
 }
 
-.menu-list-item{
+.menu-list-item a{
     color: #222222;
     text-transform: uppercase;
     font-size: 14px;
@@ -57,7 +58,7 @@ nav{
     transition: all 0.3s linear;
 }
 
-.menu-list-item:hover{
+.menu-list-item a:hover{
     color: #fed136;
 }
 
@@ -65,10 +66,9 @@ nav{
 
 main{
     padding-top: 120px;
-    padding-bottom: 98px;
 }
 
-main *, h2, p{
+.main-section *, h2, p{
     text-align: center;
 }
 
@@ -83,7 +83,7 @@ main *, h2, p{
 }
 
 p{
-    font-family: "Droid Serif", sans-serif;
+    font-family: "DroidSerif", sans-serif;
     color: #777777;
     font-weight: 400;
 }
@@ -91,14 +91,14 @@ p{
 .main-section-description{
     font-style: italic;
     font-size: 16px;
-    margin-bottom: 50px;
+    margin-bottom: 78px;
 }
 
 .services-list{
     display: flex;
     justify-content: space-between;
-    padding-bottom: 18px;
-    padding-top: 28px;
+    /* padding-bottom: 18px; */
+    /* padding-top: 28px; */
 }
 
 .service-title{
@@ -110,7 +110,7 @@ p{
     margin-bottom: 10px;
 }
 
-.service-title::before{
+.service-item::before{
     content: '';
     margin: 0 auto 22px;
     display: block;
@@ -136,7 +136,7 @@ p{
 }
 
 .service-info{
-    font-family: 'Roboto Slab', serif;
+    font-family: 'RobotoSlab', serif;
     font-weight: 400;
     font-size: 14px;
     letter-spacing: calc(14px * -25 / 1000);
@@ -144,9 +144,13 @@ p{
     text-indent: 10px;
 }
 
-/* **************FOOTER************ */
+.main-section{
+    padding-bottom: 116px;
+}
 
-footer{
+/* **************FORM-Section************ */
+
+.form-section-container{
     /* width: 1400px; */
     width: 100vw;
     height: 676px;
@@ -158,11 +162,11 @@ footer{
     padding: 100px 0 115px;
 }
 
-footer .main-section-title{
+.form-section-container .main-section-title{
     color: #ffffff;
 }
 
-.footer-description{
+p.form-title-description{
     margin-bottom: 75px;
 }
 
@@ -187,6 +191,7 @@ input{
 textarea{
     height: 213px;
     padding-top: 17px;
+    resize: none;
 }
 
 .contact-form-item:nth-child(2){
@@ -243,6 +248,7 @@ input::placeholder, textarea::placeholder{
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    width: 456px;
 }
 
 .contact-form-item:last-child{
@@ -260,7 +266,7 @@ input:required:focus:invalid, textarea:focus:invalid{
 /* *************FONTS************** */
 
 @font-face{
-    font-family: "Wisdom Script";
+    font-family: "WisdomScript";
     src: url('../fonts/Wisdom-Script-AJ.woff') format('woff');
     font-weight: 400;
     font-style: normal;
@@ -287,7 +293,7 @@ input:required:focus:invalid, textarea:focus:invalid{
   }
 
   @font-face{
-    font-family: "Droid Serif";
+    font-family: "DroidSerif";
     src: 
       url('../fonts/droidserif.woff') format("woff"), 
       url('../fonts/droidserif.woff2') format("woff2");
@@ -296,7 +302,7 @@ input:required:focus:invalid, textarea:focus:invalid{
   }
 
   @font-face{
-    font-family: "Droid Serif";
+    font-family: "DroidSerif";
     src: 
          url('../fonts/droidserifitalic.woff') format('woff'),
          url('../fonts/droidserifitalic.woff2') format('woff2');
@@ -306,7 +312,7 @@ input:required:focus:invalid, textarea:focus:invalid{
   
   /* roboto-slab-regular - latin */
 @font-face {
-    font-family: 'Roboto Slab';
+    font-family: 'RobotoSlab';
     font-style: normal;
     font-weight: 400;
     src: local(''),

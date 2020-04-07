@@ -10,8 +10,8 @@
 </head>
 
 <body>
-    <div class="container">
-        <header>
+    <header>
+        <div class="container">
             <nav class="navigation-menu">
                 <h1 class="site-logo">
                     <a href="">Golden</a>
@@ -24,31 +24,33 @@
                     <li class="menu-list-item"><a href="">Contact</a></li>
                 </menu>
             </nav>
-        </header>
+        </div>
+    </header>
 
-        <main>
-            <section class="main-section">
+    <main>
+        <section class="main-section">
+            <div class="container">
                 <h2 class="main-section-title">Services</h2>
                 <p class="main-section-description">Proin iaculis purus consequat sem cure.</p>
                 <ul class="services-list">
-                    <li class="service-item">
-                        <h3 class="service-title e-com-item">E-Commerce</h3>
+                    <li class="service-item e-com-item">
+                        <h3 class="service-title">E-Commerce</h3>
                         <p class="service-info">
                             Proin iaculis purus consequat sem cure
                             digni ssim. Donec porttitora entum suscipit
                             aenean rhoncus posuere odio in tincidunt.
                         </p>
                     </li>
-                    <li class="service-item">
-                        <h3 class="service-title resp-web-item">Responsive Web</h3>
+                    <li class="service-item resp-web-item">
+                        <h3 class="service-title">Responsive Web</h3>
                         <p class="service-info">
                             Proin iaculis purus consequat sem cure
                             digni ssim. Donec porttitora entum suscipit
                             aenean rhoncus posuere odio in tincidunt.
                         </p>
                     </li>
-                    <li class="service-item">
-                        <h3 class="service-title web-security-item">Web Security</h3>
+                    <li class="service-item web-security-item">
+                        <h3 class="service-title">Web Security</h3>
                         <p class="service-info">
                             Proin iaculis purus consequat sem cure
                             digni ssim. Donec porttitora entum suscipit
@@ -56,39 +58,40 @@
                         </p>
                     </li>
                 </ul>
-            </section>
-        </main>
-    </div>
-    <footer>
-        <section class="main-section">
-            <h2 class="main-section-title">Contact us</h2>
-            <p class="main-section-description footer-description">
-                Proin iaculis purus consequat sem cure. 
-            </p>
-            <form action="#" method="get" class="contact-form">
-                <ul class="contact-form-list">
-                    <li class="contact-form-item">
-                        <ul class="contact-form-list-parted">
-                            <li>
-                                <input type="text" name="visitor-name" placeholder="Your name *" id="" required>
-                            </li>
-                            <li>
-                                <input type="email" name="visitor-email" placeholder="Your email *" id="" required>
-                            </li>
-                            <li>
-                                <input type="text" name="form-subject" placeholder="Subject" id="">
-                            </li>
-                        </ul>
-                    <li class="contact-form-item">
-                        <textarea name="form-text" placeholder="Your message *" id="" cols="30" rows="10" required wrap="soft" autocomplete="none"></textarea>
-                    </li>
-                    <li class="contact-form-item">
-                        <button type="submit" class="send-form-button">Send message</button>
-                    </li>
-                </ul>
-            </form>
+            </div>
         </section>
-    </footer>
+        <section class="form-section">
+            <div class="form-section-container">
+                <h2 class="main-section-title">Contact us</h2>
+                <p class="main-section-description form-title-description">
+                    Proin iaculis purus consequat sem cure.
+                </p>
+                <form action="#" method="get" class="contact-form">
+                    <ul class="contact-form-list">
+                        <li class="contact-form-item">
+                            <ul class="contact-form-list-parted">
+                                <li>
+                                    <input type="text" name="visitor-name" placeholder="Your name *" id="" required>
+                                </li>
+                                <li>
+                                    <input type="email" name="visitor-email" placeholder="Your email *" id="" required>
+                                </li>
+                                <li>
+                                    <input type="text" name="form-subject" placeholder="Subject" id="">
+                                </li>
+                            </ul>
+                        <li class="contact-form-item">
+                            <textarea name="form-text" placeholder="Your message *" id="" cols="30" rows="10" required
+                                wrap="soft" autocomplete="none"></textarea>
+                        </li>
+                        <li class="contact-form-item">
+                            <button type="submit" class="send-form-button">Send message</button>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
