@@ -151,9 +151,6 @@ p{
 /* **************FORM-Section************ */
 
 .form-section-container{
-    /* width: 1400px; */
-    width: 100vw;
-    height: 676px;
     background-color: #222222;
     background-image: url(../img/map-image.png);
     background-repeat: no-repeat;
@@ -238,7 +235,7 @@ input::placeholder, textarea::placeholder{
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
-    height: 307px;
+    /* height: 307px; */
     width: 940px;
 }
 
@@ -252,7 +249,7 @@ input::placeholder, textarea::placeholder{
 }
 
 .contact-form-item:last-child{
-    margin: auto;
+    margin: 30px auto 0;
 }
 
 input:required:valid, textarea:valid{
